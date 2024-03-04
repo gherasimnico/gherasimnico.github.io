@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nico's CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header-wrapper">
+        <div>
+          <img
+            class="my-picture"
+            src="images/IMG_0358.jpg"
+            alt="my picture"
+            height="100px"
+          />
+        </div>
+        <div id="header-info">
+          <h1>Gherasim Nicoleta</h1>
+          <h2 id="job-title">ABCDEFGHYYJKLMNOPQRSTUVWXYZ</h2>
+        </div>
+      </div>
+
+      <ul id="top-menu-bar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#" onclick="showSkillsPage()">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Languages</a></li>
+      </ul>
+    </header>
+
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <h2>Contact Form</h2>
+          <form action="images/IMG_0358.jpg" method="post">
+            <label for="contact-email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="contact-email"
+              required
+              placeholder="hr@company.com"
+            />
+            <br />
+            <label for="contact-name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="contact-name"
+              required
+              placeholder="Enter your name"
+            />
+            <br />
+            <label for="contact-reason">Reason</label>
+            <input
+              type="text"
+              name="reason"
+              id="contact-reason"
+              required
+              placeholder="Reason for contacting me"
+            />
+            <br />
+            <button type="submit">Contact us</button>
+          </form>
+        </section>
+        <section>
+          <h2>Rubik's face</h2>
+          <div class="rubik-face">
+            <div style="background: #0082df"></div>
+            <div style="background: yellow"></div>
+            <div style="background: red"></div>
+            <div style="background: #0082df"></div>
+            <div style="background: yellow"></div>
+            <div style="background: red"></div>
+            <div style="background: #0082df"></div>
+            <div style="background: yellow"></div>
+            <div style="background: red"></div>
+          </div>
+        </section>
+      </div>
+      <div id="main">
+        <div class="page" id="home">
+          <p>Hello, welcome to my site</p>
+          <p>This page is about me</p>
+          <p>
+            I want <strong>this</strong> text to have both
+            <strong>bold <i>and </i></strong> <i>italic.</i>
+          </p>
+        </div>
+        <div class="page" id="skills">
+          <h2>Skills & Endorcements</h2>
+          <ul>
+            <li class="favourite">HTML - 2</li>
+            <li class="favourite">CSS - 0</li>
+            <li>JavaScript - 0</li>
+          </ul>
+        </div>
+        <div class="page" id="projects">
+          <h2>Projects</h2>
+          <p>This are the projects I've been working on...</p>
+        </div>
+
+        <div class="page" id="languages">
+          <h2>Known Languages</h2>
+          <table border="1">
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Professional</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a href="https://www.linkedin.com/in/nicolaematei">LinkedIn</a>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
