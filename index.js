@@ -28,6 +28,9 @@ showHomePage();
 var homeLink = document.querySelectorAll("#top-menu-bar a")[0];
 homeLink.addEventListener("click", showHomePage);
 
+var skillsLink = document.querySelectorAll("#top-menu-bar a")[1];
+skillsLink.addEventListener("click", showSkillsPage);
+
 var projectsLink = document.querySelectorAll("#top-menu-bar a")[2];
 projectsLink.addEventListener("click", showProjectsPage);
 
