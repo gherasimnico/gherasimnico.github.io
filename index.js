@@ -1,3 +1,5 @@
+var activePage = "home";
+
 function hide(id) {
   document.getElementById(id).style.display = "none";
 }
@@ -7,29 +9,26 @@ function show(id) {
 }
 
 function showHomePage() {
-  hide("skills");
-  hide("projects");
-  hide("languages");
+  hide(activePage);
   show("home");
+  activePage = "home";
 }
 
 function showSkillsPage() {
-  hide("home");
-  hide("projects");
-  hide("languages");
+  console.log("activePage", activePage);
+  hide(activePage);
   show("skills");
+  activePage = "skills";
 }
 function showProjectsPage() {
-  hide("home").style.display = "none";
-  hide("languages").style.display = "none";
-  hide("skills").style.display = "none";
+  hide(activePage);
   show("projects");
+  activePage = "projects";
 }
 function showLanguagesPage() {
-  hide("home").style.display = "none";
-  hide("projects").style.display = "none";
-  hide("skills").style.display = "none";
+  hide(activePage);
   show("languages");
+  activePage = "languages";
 }
 
 showHomePage();
