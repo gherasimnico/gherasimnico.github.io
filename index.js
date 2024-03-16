@@ -60,6 +60,8 @@ function sortSkillsByName(skills) {
     return a.name.localeCompare(b.name);
   });
 }
+var link = document.getElementById("projectLink");
+link.click();
 
 showPage(activePage);
 initEvents();
