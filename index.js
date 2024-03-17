@@ -54,8 +54,6 @@ function sortSkillsByEndorcements(skills) {
 function sortSkillsByName(skills) {
   return skills.sort((a, b) => a.name.localeCompare(b.name));
 }
-var link = document.getElementById("projectLink");
-link.click();
 
 showPage(activePage);
 initEvents();
