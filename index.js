@@ -55,6 +55,10 @@ function sortSkillsByName(skills) {
   return skills.sort((a, b) => a.name.localeCompare(b.name));
 }
 
+console.info(typeof []);
+console.info(typeof {});
+console.info(typeof document.getElementsByTagName("body")[0]);
+
 showPage(activePage);
 initEvents();
 loadSkills();
